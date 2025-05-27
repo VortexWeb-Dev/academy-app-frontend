@@ -1,27 +1,17 @@
 import React from "react";
-import { Mail, Phone, Globe, BadgeHelp } from "lucide-react";
-import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Mail, Phone, Globe } from "lucide-react";
 import FAQAccordion from "./FAQAccordion";
-// import MainTabContext from "./../../contexts/TabContext";
-// import { tabs } from "./../../enums/sidebarTabsEnums";
-import faqs from './../mockdata/academyFaqs';
+import faqs from "./../mockdata/academyFaqs";
 import HelpSection from "./HelpSection";
 import AcademyNavbar from "./AcademyNavbar";
 
 const AcademyHelpPage = () => {
-    // const { setMainTab } = useContext(MainTabContext);
-    // const navigate = useNavigate();
-    // setMainTab(tabs.SUPPORT)
   return (
-
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-      <AcademyNavbar/>
+      <AcademyNavbar />
 
       {/* Contact Cards Section */}
       <div className="container mx-auto px-6 py-16 md:py-24">
-
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* Email Card */}
           <div className="bg-white rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 overflow-hidden">
@@ -93,13 +83,11 @@ const AcademyHelpPage = () => {
             </div>
           </div>
         </div>
- 
-        <HelpSection/>
+
+        <HelpSection />
 
         <FAQAccordion faqs={faqs} />
       </div>
-
-
     </div>
   );
 };
