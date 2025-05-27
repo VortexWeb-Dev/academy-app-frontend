@@ -65,7 +65,7 @@ const HelpModal = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 backdrop-blur-md bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-6 rounded-t-2xl relative">
           <button 
@@ -81,7 +81,7 @@ const HelpModal = ({ isOpen, onClose }) => {
             </div>
             <div>
               <h2 className="text-2xl font-bold">Need Help?</h2>
-              <p className="text-blue-100">We're here to assist you with Academy</p>
+              <p className="text-blue-100">Just a few clicks, we need details to solve your problem faster and better!</p>
             </div>
           </div>
         </div>
